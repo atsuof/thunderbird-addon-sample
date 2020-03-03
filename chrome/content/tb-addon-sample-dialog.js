@@ -18,19 +18,19 @@ mcDialog.startup = function () {
             infoMsg += createMsg(msgObj);
         }
     }
-    var errorArea = document.getElementById("erroTextBox");
+    var errorArea = document.getElementById("firstTextBox");
     errorArea.value = erroMsg;
     if(erroMsg.length == 0){
         errorArea.setAttribute("style", "display:none;");
     }
 
-    var warnArea = document.getElementById("warnTextBox");
+    var warnArea = document.getElementById("secondTextBox");
     warnArea.value = warnMsg;
     if(warnMsg.length == 0){
         warnArea.setAttribute("style", "display:none;");
     }
 
-    var infoArea = document.getElementById("infoTextBox");
+    var infoArea = document.getElementById("thirdTextBox");
     infoArea.value = infoMsg;
     if(infoMsg.length == 0){
         infoArea.setAttribute("style", "display:none;");

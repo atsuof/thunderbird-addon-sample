@@ -14,8 +14,8 @@
 	<dialogheader title="Results" description="whatever"/>
 	<label id="dialog_message" value="Resuts"/>
 	<vbox id="resultArea" style="overflow:auto">
-		<html:textarea id="erroTextBox" rows="7" readonly="true" height="160" style="color: red"/>
-		<html:textarea id="warnTextBox" rows="7" readonly="true" height="160"/>
-		<html:textarea id="infoTextBox" rows="10" readonly="true" height="160" style="color: blue"/>
+		<html:textarea id="firstTextBox" rows="7" readonly="true" height="160" style="color: red"/>
+		<html:textarea id="secondTextBox" rows="7" readonly="true" height="160"/>
+		<html:textarea id="thirdTextBox" rows="10" readonly="true" height="160" style="color: blue"/>
     </vbox>
 </dialog>
