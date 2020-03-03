@@ -1,0 +1,6 @@
+content tb-addon-sample chrome/content/
+skin	tb-addon-sample	global	chrome/skin/global/
+
+locale tb-addon-sample ja
+
+overlay chrome://messenger/content/messengercompose/messengercompose.xul	chrome://tb-addon-sample/content/tb-addon-sample.xul

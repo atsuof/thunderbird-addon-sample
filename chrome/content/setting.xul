@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+
+<dialog id="setting" title="設定"
+		xmlns:html="http://www.w3.org/1999/xhtml"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        buttons="accept,cancel"
+        onload="startup()">
+
+	<script type="application/javascript" src="setting.js"/>
+    <label id="setting_label" value="test rest api"/>
+	<vbox id="resultArea" style="overflow:auto">
+        <button label="execute test" oncommand="execute_test();"/>
+        <html:textarea id="testResultTextBox" rows="10" readonly="true" height="160" style="color: blue"/>
+    </vbox>
+</dialog>

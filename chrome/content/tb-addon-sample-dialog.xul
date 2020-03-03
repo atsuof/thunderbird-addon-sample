@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<dialog id="tb_addon_sample" title="Results"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	buttons="accept,cancel"
+	onload="mcDialog.startup()"
+	buttonlabelaccept="send"
+	buttonlabelcancel="cancel"
+	buttondisabledaccept="true"
+	width="500" height="500">
+
+	<script type="application/javascript" src="tb_addon_sample-dialog.js"/>
+	<dialogheader title="Results" description="whatever"/>
+	<label id="dialog_message" value="Resuts"/>
+	<vbox id="resultArea" style="overflow:auto">
+		<html:textarea id="erroTextBox" rows="7" readonly="true" height="160" style="color: red"/>
+		<html:textarea id="warnTextBox" rows="7" readonly="true" height="160"/>
+		<html:textarea id="infoTextBox" rows="10" readonly="true" height="160" style="color: blue"/>
+    </vbox>
+</dialog>
