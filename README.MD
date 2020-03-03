@@ -5,7 +5,7 @@
 - Call rest-api
 - Use XPCOM (file read, base64 encoding)
 - Show Dialog
-and more..
+<br/>and more..
 
-incidentaly..
+incidentaly..<br/>
 File "tb-addin-sample.xpi" is just a zip file. Changed the file extention from "zip" to "xpi"
