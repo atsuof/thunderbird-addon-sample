@@ -59,9 +59,7 @@ var ConfirmAddress = {
 			if (xhr.status === 200) {
 				var resultJson = JSON.parse(xhr.responseText);
 				if(resultJson != null && resultJson.length != 0){
-					window.openDialog("chrome://thunderbird-addon-sample/content/thunderbird-addon-sample-dialog.xul",
-							"MailAddressChkDialog", "resizable,chrome,modal,titlebar,centerscreen",
-							window,resultJson);
+					openDialog(window,resultJson);
 				}
 				else{
 					window.confirmOK = true;
@@ -73,9 +71,7 @@ var ConfirmAddress = {
 				resultJson.errorCode = xhr.status;
 				resultJson.title = errorMessageTitle;
 				resultJson.detailMessage = errorMessageDetail + xht.responseText;
-				window.openDialog("chrome://thunderbird-addon-sample/content/thunderbird-addon-sample-dialog.xul",
-        				"MailAddressChkDialog", "resizable,chrome,modal,titlebar,centerscreen",
-						window,[resultJson]);
+				openDialog(window,[resultJson]);
 			}
 		}
 		catch(err){
@@ -84,9 +80,7 @@ var ConfirmAddress = {
 			resultJson.errorCode = "999";
 			resultJson.title = errorMessageTitle;
 			resultJson.detailMessage = errorMessageDetail + err;
-			window.openDialog("chrome://thunderbird-addon-sample/content/thunderbird-addon-sample-dialog.xul",
-					"MailAddressChkDialog", "resizable,chrome,modal,titlebar,centerscreen",
-					window,[resultJson]);
+			openDialog(window,[resultJson]);
 		}
 		return window.confirmOK;
   	},
@@ -162,13 +156,8 @@ var ConfirmAddress = {
   	}
 }
 
-function getBase64(file) {
-	var reader = new FileReader();
-	reader.readAsDataURL(file);
-	reader.onload = function () {
-	  console.log(reader.result);
-	};
-	reader.onerror = function (error) {
-	  console.log('Error: ', error);
-	};
- }
+function openDialog(window,resultJson){
+	window.openDialog("chrome://thunderbird-addon-sample/content/tb-addon-sample-dialog.xul",
+							"MailAddressChkDialog", "resizable,chrome,modal,titlebar,centerscreen",
+							window,resultJson);
+}

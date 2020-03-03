@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
 
-<overlay id="mail-security-thunderbird-overlay" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
-	<script type="application/javascript" src="mail-security-thunderbird.js"/>
-	<script type="application/javascript" src="mail-security-thunderbird-overlay.js"/>
+<overlay id="tb-addon-sample-overlay" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script type="application/javascript" src="tb-addon-sample.js"/>
+	<script type="application/javascript" src="tb-addon-sample-overlay.js"/>
 </overlay>
