@@ -26,7 +26,7 @@ function execute_test(){
         var infoArea = document.getElementById("testResultTextBox");
         infoArea.value = xhr.status + "\n" + xhr.responseText;
     }else{
-        alert("サーバーで予期せぬエラーが発生しました。");
+        alert("unexpected error occured on server");
         var errorArea = document.getElementById("testResultTextBox");
         errorArea.value = xhr.status + "\n" + xhr.responseText;
     }
